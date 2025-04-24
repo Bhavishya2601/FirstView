@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "EduJoin",
+  "version": "1.0",
+  "description": "Automatically joins classes from Google Calendar",
+  "permissions": [
+    "identity",
+    "alarms",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.googleapis.com/*",
+    "https://meet.google.com/*",
+    "https://*.zoom.us/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "oauth2": {
+    "client_id": "237637748878-0if3e6sh2sdo9i9ngmqk928mk3hvrt30.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar.readonly",
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/logo.png"
+  },
+  "icons": {
+    "128": "icons/logo.png"
+  }
+}
