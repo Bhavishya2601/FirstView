@@ -1,36 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "EduJoin",
+  "name": "FirstView",
   "version": "1.0",
-  "description": "Automatically joins classes from Google Calendar",
+  "description": "Transform your browser into a beautifully designed tab that helps you feel calm, keep focus, and stay energized.",
   "permissions": [
-    "identity",
-    "alarms",
-    "storage",
     "tabs"
   ],
-  "host_permissions": [
-    "https://www.googleapis.com/*",
-    "https://meet.google.com/*",
-    "https://*.zoom.us/*"
-  ],
   "background": {
-    "service_worker": "background.js",
-    "type": "module"
+    "service_worker": "scripts/background.js"
   },
-  "oauth2": {
-    "client_id": "237637748878-0if3e6sh2sdo9i9ngmqk928mk3hvrt30.apps.googleusercontent.com",
-    "scopes": [
-      "https://www.googleapis.com/auth/calendar.readonly",
-      "https://www.googleapis.com/auth/userinfo.email",
-      "https://www.googleapis.com/auth/userinfo.profile"
-    ]
+  "chrome_url_overrides": {
+    "newtab": "newtab/newtab.html"
   },
   "action": {
-    "default_popup": "popup.html",
     "default_icon": "icons/logo.png"
-  },
-  "icons": {
-    "128": "icons/logo.png"
   }
 }
