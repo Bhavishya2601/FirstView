@@ -11,7 +11,7 @@
 
 ## 📦 Installation
 
-1. Go to the [Releases](https://github.com/your-username/firstview/releases) section of this repository.
+1. Go to the [Releases](https://github.com/bhavishya2601/firstview/releases) section of this repository.
 2. Download the latest `firstview.zip` file.
 3. Extract the ZIP to a folder on your computer.
 4. Open Chrome and go to `chrome://extensions/`.
