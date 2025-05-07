@@ -20,9 +20,9 @@
 
 ## 🛠️ Tech Stack
 
+- JavaScript
 - HTML
 - CSS
-- JavaScript
 
 ---
 
